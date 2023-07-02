@@ -24,10 +24,11 @@ body {
 
 #content {
     width: 60%;
-    margin: auto;
-    margin-top: 10vh;
+    margin: 5vh auto;
     background-color: lightgoldenrodyellow;
     color: darkslategrey;
+    border: goldenrod 2px solid;
+    border-radius: 16px;
 }
 
 #content h1 {
@@ -48,4 +49,22 @@ body {
     text-align: center;
     margin: 16px auto;
     width: 80%;
+}
+
+#navigation-bar {
+    width: 60%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#navigation-bar > button {
+    width: calc(100% / 3);
+    background-color: lightgoldenrodyellow;
+    font-size: calc(calc(3vw + 5vh) / 3);
+    border: goldenrod 2px solid;
+    border-radius: 16px;
 }
