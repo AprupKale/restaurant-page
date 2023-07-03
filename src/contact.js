@@ -1,3 +1,5 @@
+import Location from './images/location.png';
+
 function display() {
     const content = document.createElement('div')
     content.id = 'content';
@@ -14,8 +16,9 @@ function display() {
     const address = document.createElement('p');
     address.innerHTML = 'Epicurean Escape<br>123, Ocean View Avenue,<br>Colaba, South Mumbai,<br>Mumbai, Maharashtra,<br>India';
 
-    const location = document.createElement('div');
-    location.innerHTML = '<img src="../src/images/location.png">';
+    const location = document.createElement('img');
+    location.src = Location;
+    location.alt = 'Location';
 
     content.appendChild(heading);
     content.appendChild(number);
