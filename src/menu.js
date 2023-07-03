@@ -2,10 +2,13 @@ function display() {
     const content = document.createElement('div')
     content.id = 'content';
 
+    const heading = document.createElement('h1');
+    heading.textContent = 'Menu';
+
     const appetizers = document.createElement('div');
     appetizers.id = 'appetizers';
     const appetizersHeading = document.createElement('h2');
-    appetizersHeading.innerHTML = 'Appetizers'
+    appetizersHeading.textContent = 'Appetizers'
     appetizers.appendChild(appetizersHeading);
 
     for (let i = 0; i < Appetizers.length; i++) {
@@ -39,7 +42,7 @@ function display() {
     const mainCourse = document.createElement('div');
     mainCourse.id = 'appetizers';
     const mainCourseHeading = document.createElement('h2');
-    mainCourseHeading.innerHTML = 'Main Course'
+    mainCourseHeading.textContent = 'Main Course'
     mainCourse.appendChild(mainCourseHeading);
 
     for (let i = 0; i < MainCourse.length; i++) {
@@ -73,7 +76,7 @@ function display() {
     const deserts = document.createElement('div');
     deserts.id = 'deserts';
     const desertsHeading = document.createElement('h2');
-    desertsHeading.innerHTML = 'Deserts'
+    desertsHeading.textContent = 'Deserts'
     deserts.appendChild(desertsHeading);
 
     for (let i = 0; i < Deserts.length; i++) {
@@ -104,6 +107,7 @@ function display() {
         deserts.appendChild(dish);
     }
 
+    content.appendChild(heading);
     content.appendChild(appetizers);
     content.appendChild(mainCourse);
     content.appendChild(deserts);

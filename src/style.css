@@ -109,3 +109,8 @@ div.right-column {
     width: 30%;
     align-self: center;
 }
+
+#content img {
+    width: 100%;
+    height: auto;
+}
