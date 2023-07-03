@@ -27,7 +27,7 @@ body {
     margin: 5vh auto;
     background-color: lightgoldenrodyellow;
     color: darkslategrey;
-    border: goldenrod 2px solid;
+    border: lightslategray 2px solid;
     border-radius: 16px;
 }
 
@@ -35,6 +35,14 @@ body {
     font-size: calc((3vw + 5vh) / 2);
     text-align: center;
     margin: 16px auto;
+    width: 80%;
+}
+
+#content h2 {
+    font-size: calc((3vw + 5vh) / 3);
+    text-align: center;
+    margin: 16px auto;
+    width: 80%;
 }
 
 #content h4 {
@@ -52,6 +60,8 @@ body {
 }
 
 #navigation-bar {
+    position: sticky;
+    top: 0px;
     width: 60%;
     height: 10vh;
     margin: auto;
@@ -61,10 +71,41 @@ body {
     align-items: stretch;
 }
 
-#navigation-bar > button {
+#navigation-bar>button {
     width: calc(100% / 3);
     background-color: lightgoldenrodyellow;
     font-size: calc(calc(3vw + 5vh) / 3);
-    border: goldenrod 2px solid;
+    border: lightslategray 2px solid;
     border-radius: 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#navigation-bar>button.selected {
+    background-color: slategray;
+}
+
+div.dish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.left-column {
+    width: 70%;
+}
+
+div.left-column>h4#name {
+    text-align: left;
+    margin: 8px 16px;
+}
+
+div.left-column>p#description {
+    text-align: left;
+    margin: 8px 16px;
+}
+
+div.right-column {
+    width: 30%;
+    align-self: center;
 }

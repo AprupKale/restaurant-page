@@ -4,6 +4,8 @@ import {display as displayMenu} from './menu.js';
 import {display as displayContact} from './contact.js';
 
 function displayNavigationBar () {
+    document.body.innerHTML = '';
+
     const navigationBar = document.createElement('div');
     navigationBar.id = 'navigation-bar';
 
@@ -31,20 +33,20 @@ function displayNavigationBar () {
 }
 
 function loadHome () {
-    document.body.innerHTML = '';
     document.body.appendChild(displayNavigationBar());
+    document.querySelector('#home').classList = 'selected';
     document.body.appendChild(displayHome());
 }
 
 function loadMenu () {
-    document.body.innerHTML = '';
     document.body.appendChild(displayNavigationBar());
+    document.querySelector('#menu').classList = 'selected';
     document.body.appendChild(displayMenu());
 }
 
 function loadContact () {
-    document.body.innerHTML = '';
     document.body.appendChild(displayNavigationBar());
+    document.querySelector('#contact').classList = 'selected';
     document.body.appendChild(displayContact());
 }
 
